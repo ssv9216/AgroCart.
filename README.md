@@ -1,6 +1,6 @@
 # About AgroCart
 
-This app created to help farmers to sell their crops online. It has also other features by which farmers and buyers both will be keep updated about crops rate, news, weather forecast in single app. In this used firebase api for authentication and store data.
+This app created to help farmers to sell their crops online. It has also other features by which farmers and buyers both will be keep updated about crops rate, news, weather forecast in single app. Firebase api used for authentication and storage purposes.
   
 It has **five** modules.
 
