@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gunmetal"
+    tools:context=".CropDetailPublic">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Toolbar
+            android:id="@+id/acpToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:title="About Crop">
+
+        </Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv1"
+        android:layout_below="@id/appBar"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGreen"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvCnameP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bhindi"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textColor="@color/gunmetal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            />
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="Weight  :"
+                android:textColor="@color/deem"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/cWeightP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crop_Weight"
+                android:textColor="@color/gunmetal"
+                android:layout_marginEnd="10dp"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kg"
+                android:layout_gravity="end"
+                android:textColor="@color/gunmetal"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="Price  :"
+                android:textColor="@color/deem"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/cPriceP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crop_Weight"
+                android:textColor="@color/gunmetal"
+                android:layout_marginEnd="10dp"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs"
+                android:layout_gravity="end"
+                android:textColor="@color/gunmetal"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_below="@+id/cv1"
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/mentCream"
+        />
+    <TextView
+        android:id="@+id/cDescP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDesc"
+        android:text="@string/ruff_data"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/mentCream"/>
+
+
+    <ImageButton
+        android:id="@+id/uProfileP"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="93dp"
+        android:background="@drawable/btn_back_login"
+        android:fontFamily="sans-serif-condensed"
+        android:src="@drawable/ic_person_invert_24dp" />
+
+
+</RelativeLayout>

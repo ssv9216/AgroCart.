@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/newMetal">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/gunmetal" />
+
+        <TextView
+            android:id="@+id/mcTitle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginStart="16dp"
+            android:text="Market Center"
+
+            android:textColor="@color/mentCream"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/mcData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_alignBaseline="@+id/mcTitle"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/mcTitle"
+            android:text="@string/marketCenter"
+            android:textColor="@color/mentCream"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/arrTitle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mcTitle"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Arrivals"
+            android:textColor="@color/mentCream"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/arrData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mcData"
+            android:layout_alignBaseline="@id/arrTitle"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/arrTitle"
+            android:text="@string/arrivals"
+            android:textColor="@color/mentCream"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/mPriceTitle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/arrTitle"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Modal Price"
+            android:textColor="@color/mentCream" />
+
+        <TextView
+            android:id="@+id/modelData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/arrData"
+            android:layout_alignBaseline="@id/mPriceTitle"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/mPriceTitle"
+            android:text="@string/modal_price"
+            android:textColor="@color/mentCream"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/mmPriceTitle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mPriceTitle"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:text="Min/Max Price"
+            android:textColor="@color/lightGreen"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/MinMaxData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/modelData"
+            android:layout_alignBaseline="@id/mmPriceTitle"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/mmPriceTitle"
+            android:text="@string/min_max_price"
+            android:textColor="@color/lightGreen"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

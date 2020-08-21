@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gunmetal"
+    tools:context=".MarketYard">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/laLoader"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_speed="2"
+        android:visibility="invisible"
+        app:lottie_rawRes="@raw/loading_bubble"
+        />
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        app:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gunmetal"
+            app:elevation="0dp"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Market Yard"
+                android:textAllCaps="true"
+                android:textSize="32sp"
+                android:textColor="@color/mentCream"
+                android:fontFamily="@font/bangers"
+                />
+
+        </Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBar"
+        android:background="@color/gunmetal"
+        android:padding="16dp">
+
+        <Spinner
+            android:id="@+id/srCrops"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/card_back_wall"
+            android:entries="@array/crops_names"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/srStates"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/srCrops"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/card_back_wall"
+            android:entries="@array/crops_names"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/srStates"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btn_back"
+            android:text="Search"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/variety"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Brinjal"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:background="@color/gunmetal"
+        android:textColor="@color/mentCream"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rl2"
+        />
+    <ImageButton
+        android:id="@+id/imgBtnOpen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_keyboard_arrow_up"
+        android:background="@drawable/circle_back"
+        android:clickable="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/rl2"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="0dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/amyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/variety"
+        app:reverseLayout="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ssv.com.agrocart">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ProfileImageDetail" android:parentActivityName=".HomePage2"></activity>
+        <activity
+            android:name=".PesticideDetail"
+            android:parentActivityName=".Market" />
+        <activity
+            android:name=".ForecastActivity"
+            android:parentActivityName=".Weather"
+            android:theme="@style/AppTheme.TransparentStatusBar" />
+        <activity
+            android:name=".ProfileDetail"
+            android:parentActivityName=".CropDetailPublic" />
+        <activity
+            android:name=".CropDetailPublic"
+            android:parentActivityName=".Market" />
+        <activity
+            android:name=".ExpertGuide"
+            android:parentActivityName=".HomePage2" />
+        <activity
+            android:name=".CropDetail"
+            android:parentActivityName=".MyPosts" />
+        <activity
+            android:name=".MyPosts"
+            android:parentActivityName=".HomePage2" />
+        <activity
+            android:name=".Market"
+            android:label="@string/title_activity_market"
+            android:parentActivityName=".HomePage2" />
+        <activity
+            android:name=".HomePage2"
+            android:label="@string/title_activity_home_page2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Weather"
+            android:parentActivityName=".HomePage2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.TransparentStatusBar" />
+        <activity
+            android:name=".MarketYard"
+            android:parentActivityName=".HomePage2" />
+        <activity
+            android:name=".About"
+            android:parentActivityName=".HomePage2" />
+        <activity
+            android:name=".Global_chats"
+            android:theme="@style/darkActionBar"
+            android:parentActivityName=".HomePage2" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterUser" />
+        <activity android:name=".loginpage" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".services.MyFirebaseService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+
+</manifest>

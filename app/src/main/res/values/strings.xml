@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">AgroCart</string>
+    <string name="main_register">Register</string>
+    <string name="main_log_in">LogIn</string>
+    <string name="registration">Registration</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="enter_contact_number">Enter Contact Number</string>
+    <string name="enter_address">"Enter Address"</string>
+    <string name="state">State</string>
+    <string name="district">District</string>
+    <string name="taluka">taluka</string>
+    <string name="village">village</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="enter_password">enter password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="password">password</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="email_address">Email Address</string>
+    <string name="home">Home</string>
+    <string name="policies">Policies</string>
+    <string name="sell">Sell</string>
+    <string name="news">News</string>
+    <string name="profile">Profile</string>
+    <string name="search">Search</string>
+    <string name="crops_prompt"> Select Crop</string>
+    <string name="enter_crops_weight">Enter Crops weight</string>
+    <string name="kg">KG</string>
+    <string name="rs">Rs</string>
+    <string name="post">Post</string>
+    <string name="enter_price">Enter Price</string>
+    <string name="email">EMAIL</string>
+    <string-array name="crops_names">
+        <item>brinjal </item>
+        <item>Bhindi </item>
+        <item>Cabbage </item>
+        <item>Wheat </item>
+        <item>Rice </item>
+        <item>Tomato </item>
+
+
+    </string-array>
+    <string-array name="states">
+
+        <item>Gujarat</item>
+    </string-array>
+    
+    <!--STRING FOR MARKET RATE SAMPLE-->
+    
+    <string name="marketCenter">: %s</string>
+    <string name="arrivals">: %s</string>
+    <string name="modal_price">: %s</string>
+    <string name="min_max_price">: %s</string>
+    
+    <!--NewsApi Key-->
+
+    <string name="news_api_key">d5cb5311fd834e6cb1d3c2d2cf98c92f</string>
+
+    <!--    FOR WEATHER APP-->
+
+    <string name="open_weather_maps_app_id">3119dcb25731441cff91eb23286bbe75</string>
+
+
+    <string name="place_not_found">Sorry, no weather data found.</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_home_page2">HomePage2</string>
+    <string name="market">Market</string>
+    <string name="title_activity_market">Market</string>
+    <string name="tab_text_1">Crops</string>
+    <string name="tab_text_2">Pesticides</string>
+    <string name="delete">Delete</string>
+    <string name="my_posts">My Posts</string>
+    <string name="weather">Weather</string>
+    <string name="market_yard">Market Yard</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="register">Register</string>
+    <string name="todo">TODO</string>
+    <string name="setting">Setting</string>
+    <string name="ruff_data">Cultivo, en agricultura, una planta o producto vegetal que se puede cultivar y cosechar ampliamente con fines de lucro o de subsistencia. Por uso, los cultivos se dividen en seis categorías: cultivos alimentarios, para consumo humano (por ejemplo, trigo, papas); cultivos forrajeros, para consumo ganadero (por ejemplo, avena, alfalfa); cultivos de fibras, para cordeles y textiles (por ejemplo, algodón, cáñamo); cultivos oleaginosos, para consumo o usos industriales (por ejemplo, semillas de algodón, maíz); cultivos ornamentales, para jardinería paisajística (por ejemplo, cornejo, azalea); y cultivos industriales y secundarios, para diversos usos personales e industriales (por ejemplo, caucho, tabaco).</string>
+    <string name="today">Today</string>
+    <string name="_5_day_forecast">5-day forecast</string>
+    <string name="transition">transition</string>
+    <string name="greetingtext">"Hi there, %s "</string>
+</resources>

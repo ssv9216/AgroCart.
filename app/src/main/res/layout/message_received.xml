@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/newMetal"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+        <TextView
+            android:id="@+id/tvSenderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/lightGreen"
+            />
+        <TextView
+            android:id="@+id/msgReceived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="3dp"
+            android:text="Message received"
+            android:textColor="@color/mentCream"
+            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/mrTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22:10"
+                android:textColor="#C3FFFFFF"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

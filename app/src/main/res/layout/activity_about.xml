@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gunmetal"
+    android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        app:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:title=""
+            android:background="@color/gunmetal"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:fontFamily="@font/bangers"
+                android:textSize="32sp"
+                android:textColor="@color/mentCream"
+                />
+
+        </Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_below="@id/appBar"
+    >
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/card_outline"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agocart - v-1, pBeta-3.1.1"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/mentCream"
+
+            />
+        <View
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:background="@color/gunmetal"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coded with 💕 By Sohan"
+            android:textSize="16dp"
+            android:textColor="@color/mentCream"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/ll1"
+        app:cardCornerRadius="5dp"
+        android:layout_width="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/newMetal"
+        android:layout_height="wrap_content"
+        android:focusable="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telegram Group"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/mentCream"
+            />
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_toEndOf="@id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_telegram"
+            android:layout_marginStart="10dp"
+            />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tvContactMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Me :"
+        android:layout_below="@id/cv1"
+        android:textColor="@color/lightGreen"
+        android:layout_marginTop="25dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvContactMe"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_outline"
+            android:padding="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="intentToTwitter"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_twitter" />
+
+            <ImageButton
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="intentToInstagram"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_instagram" />
+            <ImageButton
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="intentToMyTelgram"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_telegram"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+</RelativeLayout>

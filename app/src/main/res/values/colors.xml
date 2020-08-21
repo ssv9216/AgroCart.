@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#292F36</color>
+    <color name="colorPrimaryDark">#292F36</color>
+    <color name="colorAccent">#2CDA9D</color>
+
+    <color name="gunmetal">#292F36</color>
+    <color name="darkGUn">#21272E</color>
+    <color name="mentCream">#F7FFF7</color>
+    <color name="waterGreen">#539987</color>
+    <color name="eucalyptus">#2CDA9D</color>
+    <color name="lightGreen">#7CEA9C</color>
+    <color name="deem">#F8302C2C</color>
+    <color name="skyBlue">#5DBFEC</color>
+    <color name="skyBlue1">#3CB4EC</color>
+    <color name="newMetal">#191C20</color>
+</resources>

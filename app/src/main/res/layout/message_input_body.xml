@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:layout_marginBottom="5dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginEnd="10dp"
+        app:cardElevation="0dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/gunmetal"
+        app:cardCornerRadius="20dp"
+        >
+    <EditText
+        android:id="@+id/etMsgInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/newMetal"
+        android:hint="Enter message..."
+        android:padding="10dp"
+        android:textColor="@color/mentCream"
+        android:textColorHint="#C4FFFFFF"
+        android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSend"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:elevation="0dp"
+        android:src="@drawable/ic_menu_send"
+        android:layout_marginEnd="5dp"
+        />
+</LinearLayout>
+</RelativeLayout>

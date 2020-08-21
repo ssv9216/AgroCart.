@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCredit"
+        android:layout_width="106dp"
+        android:layout_toStartOf="@id/view"
+        android:layout_height="32dp"
+        style="@style/Widget.AppCompat.Button"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_gravity="center"
+        app:cardCornerRadius="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="@color/gunmetal"
+        android:textSize="16sp"
+        android:focusable="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:padding="5dp"
+            >
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16dp"
+            android:text="CREDIT"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:textColor="@color/mentCream"
+            />
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_toRightOf="@id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/credit"
+            android:layout_gravity="end"
+            />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvAbout"
+        android:layout_width="106dp"
+        android:layout_toRightOf="@id/view"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        app:cardCornerRadius="10dp"
+        style="@style/Widget.AppCompat.Button"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/gunmetal"
+        android:textSize="16sp"
+        android:focusable="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="5dp"
+            >
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:text="ABOUT"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:textColor="@color/mentCream"
+                />
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_toRightOf="@id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/about"
+                android:padding="2dp"
+                android:layout_gravity="end"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/cvCredit"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/gunmetal"
+        app:cardElevation="0dp"
+        android:layout_marginTop="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_outline"
+            android:padding="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_share" />
+
+            <ImageButton
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_star" />
+            <ImageButton
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_version"
+                android:layout_weight="1"
+                />
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

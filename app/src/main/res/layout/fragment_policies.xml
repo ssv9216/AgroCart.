@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gunmetal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/laLoader"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_speed="2"
+        app:lottie_rawRes="@raw/loading_bubble"
+        />
+
+    <TextView
+        android:id="@+id/fpTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/mentCream"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:fontFamily="@font/bangers"
+        android:text="Policies" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/fpTitle"
+        android:id="@+id/fpRecyclerView"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</RelativeLayout>
